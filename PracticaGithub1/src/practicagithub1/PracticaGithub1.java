@@ -32,17 +32,22 @@ public class PracticaGithub1 {
        
        letra=Character.toUpperCase(letra);
        
-           for(int i=0;i<cadena.length();i++){
-               
-               if(cadena.charAt(i)==letra){
-                   cont++;
-               }
-               
-           }
+        cont = algo(cadena, letra, cont);
        System.out.println("hay "+cont+" letras que son "+letra);
            
            
    }
+
+    public static int algo(String cadena, char letra, int cont) {
+        for(int i=0;i<cadena.length();i++){
+            
+            if(cadena.charAt(i)==letra){
+                cont++;
+            }
+            
+        }
+        return cont;
+    }
     }
     
 
